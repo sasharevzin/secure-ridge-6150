@@ -6,5 +6,8 @@
   },
   "require-dev": {
     "heroku/heroku-buildpack-php": "*"
+  },
+  "suggest": {
+    "ext-imagick": "PHP Image Magick"
   }
 }
