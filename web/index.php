@@ -13,7 +13,6 @@ $app->register(new Silex\Provider\MonologServiceProvider(), array(
 // Our web handlers
 
 $app->get('/', function() use($app) {
-  use ColorThief\ColorThief;
   $app['monolog']->addDebug('logging output.');
   $palette = ColorThief::getPalette('http://lokeshdhakar.com/projects/color-thief/img/photo1.jpg');
   return 'Hello '.$palette;
