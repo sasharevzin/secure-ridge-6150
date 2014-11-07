@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "69db7392a556451d8ae70e5d690f3379",
+    "hash": "787ec76f30c2d5bbf24e2076298af376",
     "packages": [
         {
             "name": "ksubileau/color-thief-php",
@@ -654,6 +654,8 @@
     "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": false,
-    "platform": [],
+    "platform": {
+        "ext-gd": "*"
+    },
     "platform-dev": []
 }
