@@ -16,13 +16,14 @@ $app->register(new Silex\Provider\MonologServiceProvider(), array(
 $app->get('/', function() use($app) {
   $app['monolog']->addDebug('logging output.');
 
-  $limit = $request->get('url');
+  $limit = $_GET['limit'];
+  $url = $_GET['url'];
 
   if(!isSet($limit)){
     $limit = 9;
   }
 
-  $palette = ColorThief::getPalette($request->get('url'), $limit);
+  $palette = ColorThief::getPalette($url, $limit);
   return $app->json($palette);
 });
 
